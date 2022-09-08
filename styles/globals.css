@@ -121,6 +121,10 @@ width: 100%;
 
 .product-name{
   font-weight: 500;
+  width: 250px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .product-price{
   font-weight: 800;
@@ -245,11 +249,13 @@ text-align: end;
   margin:18px;
 }
 .footer-banner-image{
-  position: absolute;
+  /* position: absolute; */
   /* top: -35%;
   left: 8%; */
-  top: -25%;
-  left: 25%;
+  /* top: -25%; */
+  /* left: 25%; */
+  max-width: 450px;
+  max-height: 450px;
 }
 .banner-desc .right{
   line-height: 1.4;
