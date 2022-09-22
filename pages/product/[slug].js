@@ -79,7 +79,7 @@ const ProductDetails = ({ product, products }) => {
                 <div className="marquee">
                     <div className="maylike-products-container track">
                         {products.map((item) => (
-                            <Product product={item} key={item._id} />
+                            <Product className="maylike-product" product={item} key={item._id} />
                         ))}
                     </div>
                 </div>
