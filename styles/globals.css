@@ -5,8 +5,12 @@ body, * {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   box-sizing: border-box;
-
 }
+
+body {
+  background-color: #333;
+}
+
 ::-webkit-scrollbar {
   width: 0px;
 }
@@ -17,13 +21,14 @@ a {
 }
 
 .main-container{
-max-width: 1400px; 
+max-width: 100vw; 
 margin: auto;
 width: 100%;
 
 }
 .layout{
-  padding: 10px;
+  padding: 0px;
+  color: white;
 }
 
 .navbar-container{
@@ -31,6 +36,7 @@ width: 100%;
   justify-content: space-between;
   margin: 6px 18px;
   position: relative;
+  padding: 10px;
 }
 .marquee-text{
   font-size: 29px;
@@ -65,7 +71,7 @@ width: 100%;
     margin-left: 6px;
 }
 .logo{
-  color: gray;
+  color: white;
   font-size: 18px;
 
 }
@@ -99,7 +105,7 @@ width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 15px;
+  gap: 25px;
   margin: 0px auto;
   margin-top: 20px;
   width: 100%;
@@ -113,10 +119,10 @@ width: 100%;
 
 }
 .product-card:hover{
-  transform: scale(1.1,1.1)
+  transform: scale(1.1,1.1);
 }
 .product-image{
-  border-radius: 15px;
+  border-radius: 5px;
  background-color: #ebebeb;
   transform: scale(1, 1);
   transition: transform 0.5s ease;
@@ -124,21 +130,21 @@ width: 100%;
 
 .product-name{
   font-weight: 500;
-  width: 250px;
+  width: 300px;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  color: white;
 }
 .product-price{
-  font-weight: 800;
+  font-weight: 700;
   margin-top: 6px;
-  color: black;
+  color: white;
 }
 
 .hero-banner-container{
   padding: 100px 40px;
   background-color: #dcdcdc;
-  border-radius: 15px;
   position: relative;
   height: 500px;
   line-height: 0.9; 
@@ -221,9 +227,8 @@ text-align: end;
   padding: 100px 40px;
   /* background-color: #f02d34; */
   background: url("https://images.squarespace-cdn.com/content/v1/559c3ccce4b0cebfa4ebbf72/1492815453704-TQ4BH8OGWDJ9U5YOPCZ2/IMG_5980.JPG") no-repeat center center / cover;
-  border-radius: 15px;
   position: relative;
-  height: 800px;
+  height: 500px;
   line-height: 1; 
   color: white;
   width: 100%;
@@ -428,7 +433,7 @@ padding: 30px 65px;
   margin: 40px;
   margin-top: 60px;
   max-width: 1400px;
-  color: #324d67; 
+  color: white; 
 }
 
 .product-detail-image{
@@ -448,6 +453,8 @@ padding: 30px 65px;
   display: flex;
   gap: 10px;
   margin-top: 20px;
+  width: 400px;
+  flex-wrap: wrap;
 }
 .small-image{
   border-radius: 8px;
@@ -769,51 +776,28 @@ margin-top: 160px;
   margin: auto;
 }
 }
-/* 
-body {
-  margin:0px;
-}
-.colour-block {
-  background:#369A7E;
-  width:100%;
-  padding:7% 20% 10% 20%;
-  color:#fff;
-}
-.white-block {
-  background:#fff;
-  width:60%;
-  padding:7% 20% 10% 20%;
-  color:#369A7E;
-}
-/* h1 {
-  text-align:center;
-  font-size:80px;
-  font-family:'wire one', serif;
-  font-weight:normal;
-}
-p {
-  font-size:20px;
-  font-family:'Raleway', serif;
-} */
 
+/* Thanks to Sebastiano Guerriero for the text-divider 
+  https://dev.to/codyhouse/css-nugget-text-divider-in-flexbox-3310 */
+.text-divider {
+  display: flex;
+  align-items: center;
+  --text-divider-gap: 1rem;
+  color: white;
+}
 
-/*----------------*/
-/*  SCALLOP down  */
-/*----------------*/
-/* .scallop-down{
-  height:100px;
-  width:100%;
-  background: -webkit-gradient(radial, 50% 0, 10, 50% 0, 40, from(#369A7E), color-stop(0.49, #369A7E), color-stop(0.51, #fff), to(white));
--webkit-background-size: 49px 100%;
-} */
+.text-divider::before,
+.text-divider::after {
+  content: '';
+  height: 1px;
+  background-color: silver;
+  flex-grow: 1;
+}
 
+.text-divider::before {
+  margin-right: var(--text-divider-gap);
+}
 
-/*----------------*/
-/*  SCALLOP up    */
-/*----------------*/
-/* .scallop-up{
-  height:100px;
-  width:100%;
-  background: -webkit-gradient(radial, 50% 100%, 10, 50% 100%, 40, from(#369A7E), color-stop(0.49, #369A7E), color-stop(0.51, #fff), to(white));
--webkit-background-size: 49px 100%;
-} */
+.text-divider::after {
+  margin-left: var(--text-divider-gap);
+}
