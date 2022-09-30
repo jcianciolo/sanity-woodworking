@@ -9,6 +9,7 @@ body, * {
 
 body {
   background-color: #222;
+
 }
 
 ::-webkit-scrollbar {
@@ -121,7 +122,7 @@ width: 100%;
 .product-card{
  cursor: pointer;
   transform: scale(1, 1);
-  transition: transform 0.5s ease;
+  transition: transform 0.3s ease;
  color: #324d67;
 
 }
@@ -130,8 +131,8 @@ width: 100%;
 }
 .product-image{
   border-radius: 5px;
-  width: 450px;
-  height: 450px;
+  width: 400px;
+  height: 400px;
  background-color: #ebebeb;
   /* opacity: 1;
   -webkit-transition: .5s ease-in-out;
@@ -162,7 +163,13 @@ width: 100%;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url("https://images.squarespace-cdn.com/content/v1/559c3ccce4b0cebfa4ebbf72/1492815453704-TQ4BH8OGWDJ9U5YOPCZ2/IMG_5980.JPG") no-repeat center center / cover;
   color: white;
   position: relative;
-  height: 500px;
+  min-height: 600px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   line-height: 0.9; 
   width: 100%;
   display: flex;
@@ -236,8 +243,8 @@ align-self: flex-end;
 }
 .products-heading{
   text-align: center;
-  margin: 40px 0px;
- color: #324d67;
+  margin: 80px 0px;
+  color: #324d67;
 
 }
 .products-heading h2{
@@ -675,8 +682,12 @@ margin-top: 160px;
 .about-container, .contact-container  {
   height: 75vh;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
+}
+
+.about-description {
+  max-width: 500px;
 }
 
 @media screen and (max-width:800px) {
