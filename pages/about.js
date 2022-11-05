@@ -5,7 +5,7 @@ const About = () => {
     <div className="about-container">
         <div className="about-description">
             <h1>About me</h1>
-            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id ut consequuntur, amet delectus voluptates totam iure natus ea unde distinctio labore, cumque deleniti sunt eum inventore porro mollitia, molestiae sint.</h4>
+            <h4>Alexander Kochman graduated from U.C. Berkeley with a degree in Architecture. His passion forwoodworking has driven him to build tables of exceptional quality and character.</h4>
         </div>
         <div>
             <img src="https://picsum.photos/500/400" />
