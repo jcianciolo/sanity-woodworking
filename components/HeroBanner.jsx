@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
+import Slide from 'react-reveal/Slide';
 
 import { urlFor } from '../lib/client'
 
@@ -7,9 +8,11 @@ const HeroBanner = ({ heroBanner }) => {
   return (
     <div className="hero-banner-container">
       <div>
-        <p>{heroBanner.smallText}</p>
-        <h3>{heroBanner.midText}</h3>
-        <h1>{heroBanner.largeText1}</h1>
+        <Slide top>
+          <p>{heroBanner.smallText}</p>
+          <h3>{heroBanner.midText}</h3>
+          <h1>{heroBanner.largeText1}</h1>
+        </Slide>
       </div>
     </div>
   )

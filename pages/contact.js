@@ -4,7 +4,7 @@ const Contact = () => {
   return (
     <div className="contact-container">
         <div>
-            <h1>contact</h1>
+            <h1>Contact Me</h1>
         </div>
         <div>
             <img src="https://picsum.photos/500/400" />

@@ -1,7 +1,7 @@
 import React from 'react'
 import { client } from '../lib/client'
 import { Product, FooterBanner, HeroBanner } from '../components'
-
+import Slide from 'react-reveal/Slide'
 
 
 const Home = ({ products, bannerData }) => {
@@ -14,7 +14,7 @@ const Home = ({ products, bannerData }) => {
       </div>
 
       <div className="products-container">
-        {products?.map((product) => <Product key={product._id} product={product} />)} 
+        {products?.map((product) => <Slide left><Product key={product._id} product={product} /></Slide>)} 
       </div>
 
     </>
