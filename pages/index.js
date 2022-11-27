@@ -1,10 +1,16 @@
 import React from 'react'
 import { client } from '../lib/client'
 import { Product, FooterBanner, HeroBanner } from '../components'
-import Slide from 'react-reveal/Slide'
+import { useInView } from 'react-intersection-observer';
+// import Slide from 'react-reveal/Slide'
 
 
 const Home = ({ products, bannerData }) => {
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    rootMargin: '-100px 0px',
+  });
+
   return (
     <>
       <HeroBanner heroBanner={bannerData.length && bannerData[0]}/>
@@ -14,7 +20,7 @@ const Home = ({ products, bannerData }) => {
       </div>
 
       <div className="products-container">
-        {products?.map((product) => <Slide left><Product key={product._id} product={product} /></Slide>)} 
+        {products?.map((product) => <Product ref={ref} className={`product ${inView ? 'show' : 'hidden'}`} key={product._id} product={product} />)} 
       </div>
 
     </>
@@ -33,7 +39,11 @@ export const getServerSideProps = async () => {
   }
 }
 export default Home
-
+ 
 
       // <FooterBanner footerBanner={bannerData && bannerData[0]} />
+// 
+
+//  Old react-reveal method
+// {products?.map((product) => <Slide left><Product key={product._id} product={product} /></Slide>)} 
 // 
