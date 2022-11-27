@@ -7,8 +7,8 @@ import { useInView } from 'react-intersection-observer';
 
 const Home = ({ products, bannerData }) => {
   const { ref, inView } = useInView({
-    triggerOnce: true,
-    rootMargin: '-100px 0px',
+    // triggerOnce: true,
+    threshold: .9,
   });
 
   return (
@@ -20,7 +20,7 @@ const Home = ({ products, bannerData }) => {
       </div>
 
       <div className="products-container">
-        {products?.map((product) => <Product ref={ref} className={`product ${inView ? 'show' : 'hidden'}`} key={product._id} product={product} />)} 
+        {products?.map((product) => <Product key={product._id} product={product}/>)} 
       </div>
 
     </>
