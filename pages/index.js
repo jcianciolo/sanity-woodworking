@@ -1,16 +1,8 @@
 import React from 'react'
 import { client } from '../lib/client'
 import { Product, FooterBanner, HeroBanner } from '../components'
-import { useInView } from 'react-intersection-observer';
-// import Slide from 'react-reveal/Slide'
-
 
 const Home = ({ products, bannerData }) => {
-  const { ref, inView } = useInView({
-    // triggerOnce: true,
-    threshold: .9,
-  });
-
   return (
     <>
       <HeroBanner heroBanner={bannerData.length && bannerData[0]}/>

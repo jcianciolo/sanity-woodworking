@@ -114,7 +114,7 @@ width: 100%;
   flex-wrap: wrap;
   justify-content: center;
   /* grid-template-columns: repeat(3, 1fr); */
-  align-items: cemter;
+  align-items: center;
   gap: 25px;
   margin: 0px auto;
   margin-top: 20px;
@@ -134,9 +134,28 @@ width: 100%;
   filter: blur(0);
   transform: translateX(0);
   transition: all 1s;
+}
 
+.hidden2 {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+
+.show2 {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+  transition: all 1s;
+}
+
+.aboutComponent2 {
+  color: #000;
+  background-color: white;
   
 }
+
 
 .product-card{
  cursor: pointer;
