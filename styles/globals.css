@@ -136,6 +136,13 @@ width: 100%;
   transition: all 1s;
 }
 
+.aboutComponent2 .hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(100%);
+  transition: all 1s;
+}
+
 .hidden2 {
   opacity: 0;
   filter: blur(5px);
@@ -152,8 +159,8 @@ width: 100%;
 
 .aboutComponent2 {
   color: #000;
-  background-color: white;
-  
+  background-color: #DDD;
+  overflow-x: hidden;
 }
 
 
@@ -719,9 +726,9 @@ margin-top: 160px;
 } */
 
 .about-container, .contact-container  {
-  height: 75vh;
+  height: 100vh;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
 }
 

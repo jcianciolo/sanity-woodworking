@@ -6,12 +6,17 @@ import AboutComponent from '../components/AboutComponent'
 const About = () => {
 
   return (
-    <>
-        <AboutComponent />
+    <> 
+        <div className="aboutComponent1">
+            <AboutComponent />
+        </div>
         <div className="aboutComponent2">
             <AboutComponent />
         </div>
-        <AboutComponent />
+        <div className="aboutComponent3">
+            <AboutComponent />
+        </div>
+        
     </>
   )
 }
