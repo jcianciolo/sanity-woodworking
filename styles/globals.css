@@ -287,12 +287,7 @@ align-self: flex-end;
   /* color: black; */
   align-self: flex-end;
 }
-.products-heading{
-  text-align: center;
-  margin: 80px 0px;
-  color: #324d67;
 
-}
 .products-heading h2{
   font-size: 40px;
   font-weight: 800;
