@@ -33,11 +33,12 @@ width: 100%;
 }
 
 .navbar-container{
+  /* position: absolute; */
   display: flex;
   justify-content: space-between;
   margin: 6px 18px;
-  position: relative;
   padding: 10px;
+  z-index: 1000;
 }
 
 .navbar-links {
@@ -46,7 +47,7 @@ width: 100%;
 }
 
 .marquee-text{
-  font-size: 29px;
+  font-size: 29px;  
   font-weight: 600;
   margin: 60px 0px;
   color: #f02d34;
@@ -136,6 +137,8 @@ width: 100%;
   transition: all 800ms;
 }
 
+
+
 .aboutComponent2 .hidden {
   opacity: 0;
   filter: blur(5px);
@@ -206,11 +209,11 @@ width: 100%;
   padding-left: 40px;
   margin: 0px auto;
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url("https://images.squarespace-cdn.com/content/v1/559c3ccce4b0cebfa4ebbf72/1492815453704-TQ4BH8OGWDJ9U5YOPCZ2/IMG_5980.JPG") no-repeat center center / cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0)), url("https://images.squarespace-cdn.com/content/v1/559c3ccce4b0cebfa4ebbf72/1492815453704-TQ4BH8OGWDJ9U5YOPCZ2/IMG_5980.JPG") no-repeat center center / cover;
   color: white;
   position: relative;
-  min-height: 600px;
-
+  min-height: 95vh;
+  border-bottom: 1px solid white;
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
@@ -289,6 +292,7 @@ align-self: flex-end;
 }
 
 .products-heading h2{
+  margin: 200px 0px;
   font-size: 40px;
   font-weight: 800;
 }
@@ -882,8 +886,9 @@ margin-top: 160px;
   https://dev.to/codyhouse/css-nugget-text-divider-in-flexbox-3310 */
 .text-divider {
   display: flex;
+  padding: 0px 150px;
   align-items: center;
-  --text-divider-gap: 1rem;
+  --text-divider-gap: 2rem;
   color: white;
 }
 
