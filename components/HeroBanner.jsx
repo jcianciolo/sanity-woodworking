@@ -9,7 +9,6 @@ const HeroBanner = ({ heroBanner }) => {
     <div className="hero-banner-container">
       <div>
         <Slide top>
-          <p>{heroBanner.smallText}</p>
           <h3>{heroBanner.midText}</h3>
           <h1>{heroBanner.largeText1}</h1>
         </Slide>
