@@ -6,7 +6,7 @@ import { useInView } from 'react-intersection-observer';
 
 const Product = ({ product: { image, name, slug, price } }) => {
   const { ref, inView } = useInView({
-    // triggerOnce: true,
+    triggerOnce: true,
     threshold: .1,
   });
 

@@ -8,7 +8,12 @@ const Home = ({ products, bannerData }) => {
       <HeroBanner heroBanner={bannerData.length && bannerData[0]}/>
 
       <div className="products-heading">
-        <h2 className="text-divider">Our Tables</h2> 
+        <h2>AJK Woodworking</h2>
+        <h5>AJK Woodworking</h5>
+        <h5>---------- EST 2014 ----------</h5>
+        <h2>EXCEPTIONAL HANDCRAFTED TABLES AND FURNITURE</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita distinctio magnam incidunt quaerat ducimus modi similique laboriosam quam ab. Molestiae omnis quibusdam maxime quasi, autem exercitationem sit porro magnam sapiente perferendis! Eligendi minima perspiciatis earum. Neque ipsa, deserunt id quasi similique fugit aperiam inventore laudantium recusandae illo at quidem dolorem!</p>
+        <h2>Our Tables</h2> 
       </div>
 
       <div className="products-container">
