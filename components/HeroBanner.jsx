@@ -10,7 +10,6 @@ const HeroBanner = ({ heroBanner }) => {
       <div>
         <Slide top>
           <h3>{heroBanner.midText}</h3>
-          <h1>{heroBanner.largeText1}</h1>
         </Slide>
       </div>
     </div>
