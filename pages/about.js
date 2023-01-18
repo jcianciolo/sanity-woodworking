@@ -16,6 +16,9 @@ const About = () => {
         <div className="aboutComponent3">
             <AboutComponent />
         </div>
+        <div className="aboutComponent4">
+            <AboutComponent />
+        </div>
         
     </>
   )

@@ -9,7 +9,7 @@ body, * {
 }
 
 body {
-  background-color: #222;
+  background-color: #111;
 
 }
 
@@ -165,13 +165,13 @@ width: 100%;
   transition: all 800ms;
 }
 
-.aboutComponent2 {
+.aboutComponent2, .aboutComponent4 {
   color: #000;
   background-color: #DDD;
   overflow-x: hidden;
 }
 
-.aboutComponent2 .about-container {
+.aboutComponent2 .about-container, .aboutComponent4 .about-container {
   flex-direction: row-reverse;
 }
 
@@ -223,7 +223,7 @@ width: 100%;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url("https://images.squarespace-cdn.com/content/v1/559c3ccce4b0cebfa4ebbf72/1492815453704-TQ4BH8OGWDJ9U5YOPCZ2/IMG_5980.JPG") no-repeat center center / cover;
   color: white;
   position: relative;
-  min-height: 75vh;
+  min-height: 95vh;
   /* border-top: 1px solid white;
   border-bottom: 1px solid white; */
     /* Create the parallax scrolling effect */
@@ -313,6 +313,7 @@ align-self: flex-end;
   border-radius: 50%;
   line-height: 2;
   max-width: 100%;
+  text-align: center;
 } 
 
 .products-heading img {
@@ -901,6 +902,10 @@ margin-top: 160px;
     margin: 20px;
   }
 
+  .product-image {
+    width: 250px;
+    height: 250px;
+  }
 .item-desc .flex{
   width: 200px;
 }
