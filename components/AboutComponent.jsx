@@ -17,7 +17,7 @@ const AboutComponent = () => {
             <div className="about-description">
                 <h2>Alexander Kochman graduated from U.C. Berkeley with a degree in Architecture. His passion for woodworking has driven him to build tables of exceptional quality and character.</h2>
             </div>
-            <div>
+            <div className="about-image">
                 <img src="https://picsum.photos/1400/1200" />
             </div>
         </div>
