@@ -40,7 +40,7 @@ width: 100%;
   margin: 10px 20px;
   padding: 10px;
   z-index: 1000;
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+  /* box-shadow: 0 rgba(0,0,0,1); */
 }
 
 .navbar-links {
@@ -205,9 +205,11 @@ width: 100%;
   -webkit-transition: .5s ease-in-out;
 	transition: .5s ease-in-out; */
 }
-/* .product-image:hover {
-  opacity: 0.5;
-} */
+.product-image:hover {
+ border: 5px solid white;
+ transition: .3s ease-in-out;
+
+}
 
 .product-name{
   font-weight: 500;
