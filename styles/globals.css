@@ -115,6 +115,21 @@ width: 100%;
   font-weight: 600;
 
 }
+
+.products-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0px auto;
+  width: 100%;
+  background-color: black;
+}
+
+.products-section h1 {
+  margin: 30px auto;
+  font-size: 42px;
+}
 .products-container{
   /* background-color: #dcdcdc; */
   /* max-width: 100vw; */
@@ -128,7 +143,6 @@ width: 100%;
   margin: 0px auto;
   /* margin-top: 0px; */
   width: 100%;
-  background-color: black;
 }
 
 .hidden {
@@ -808,6 +822,12 @@ overflow: hidden;
   height: 75vh;
 }
 
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .about-description {
   text-align: center;
   min-width: 50%;
