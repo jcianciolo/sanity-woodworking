@@ -820,14 +820,35 @@ overflow: hidden;
 }
 .contact-container {
   height: 75vh;
+  justify-content: center;
 }
 
 .contact-form {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 400px;
+  width: 500px;
+  background-color: #222;
+}
+
+.contact-inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
 }
+
+.contact-inputs input {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.contact-inputs label {
+  align-self: start;
+}
+
 .about-description {
   text-align: center;
   min-width: 50%;
